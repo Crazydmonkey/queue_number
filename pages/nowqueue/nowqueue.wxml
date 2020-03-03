@@ -1,0 +1,42 @@
+
+<view class="now_queue ">
+   <view class="bg-gradual-blue flex-sub radius shadow-lg" style="height:100%;">
+     <view style="height:30px">
+       <button class="cu-btn sm" style="margin-top:1em;float:left;margin-left:1em">联系我们</button><button style="float:right;margin-top:1em;margin-right:1em" class="cu-btn sm">关闭语音</button>
+     </view>
+     <view style="font-size:12px;text-align:center;margin-top:1em">
+        您目前与我们相距：2601.18公里
+     </view>
+     <view style="font-size:12px;text-align:center;margin-top:1em">
+        号码:V1号 业务:{{'VIP业务'}}
+     </view>
+      <view class=" text-xl" style="text-align:center;margin-top:1em">
+        <text class="text-black text-bold">前方已无他人</text>
+      </view>
+      <view class="text-xl" style="text-align:center">
+         <text class="text-black text-bold">即刻轮到您了</text>
+      </view>
+      <view  style="text-align:center;margin-top:.5em">
+         <text class="text-black" style="font-size:12px;color:white">耐心等待一小会</text>
+      </view>
+    <image src="https://image.weilanwl.com/gif/rhomb-black.gif" mode="aspectFit" class="gif-black response" style="height:220rpx">
+    </image>
+     <view  style="text-align:center;margin-top:-.5em">
+         <text class="text-black" style="font-size:12px;color:white">请您在下方位置附件等待叫号</text>
+    </view>
+    <view class="cu-card" style="position:relative;border-radius:10px;height:30%;">
+      
+      <map id="map" longitude="113.324520" latitude="23.099994" scale="14" 
+      controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" 
+      polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 100%;"></map>
+    </view>
+     <view class="text-xl padding" style="text-align:center">
+         <text class="text-black" style="font-size:12px;color:white" bindtap="handleCancel">取消排队</text>
+          <view  style="text-align:center;">
+            <text class="text-black" style="font-size:12px;color:white">共有3人排队中</text>
+          </view>
+      </view>
+    
+
+  </view>
+</view>

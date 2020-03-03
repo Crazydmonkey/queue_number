@@ -1,0 +1,89 @@
+
+<view class="container">
+    <!-- 顶部图片 -->
+    <view class='images'>
+        <image  src='../../images/20200302.jpg' style=''></image>
+    </view>
+
+      <view class='actions'>
+        <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+          <view class="cu-item">
+              <view class="content padding-tb-sm">
+                <view class="content">
+                  <image src='../../images/map.png' class="text-black text-xs" ></image>
+                  <text class="text-black text-xs">深圳和平路3009号（当前距离）</text>
+                </view>
+                <view class="content">
+                  <image src='../../images/timer.png' class="text-black text-xs" ></image>
+                  <text class="text-black text-xs">早9:00-晚5:00</text>
+                </view>
+              </view>
+              <view class="action">
+                <view class="content">
+                  <image src='../../images/telephone.png' class="text-black text-xs" bindtap='handBo'></image>
+                </view>
+              </view>
+          </view>
+        </view>
+       
+          
+            
+          
+      </view>
+      <view  class="flex flex-direction">
+        <text class="cu-btn" style='font-size:12px'>当前共{{0}}人排队</text>
+        <text class="cu-btn" style='border-top:1px dashed  black;'>
+         <text style='font-size:13px'>输入下列信息 开始智能排队</text>
+         
+        </text>
+        <text style='font-size:13px;text-align:center;margin-top:-0.8em;position:relative'>请选择服务类型</text>
+      </view>
+      <view class='nav-list'>
+    <view hover-class='none'  class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:for-item="item" wx:key bindtap='handleChange' data-record="{{item}}">
+      <view class="nav-title">{{item.title}}</view>
+      <view class="nav-name">{{item.name}}</view>
+      <text class='cuIcon-{{item.icon}}'></text>
+    </view>
+  </view>
+    <view  class="flex flex-direction"  style='margin-top:-.5em'>
+      <button bindtap="showModal" class="cu-btn bg-cyan lg" data-target="DialogModal1">排队</button>
+    </view>
+    <view class="btn-area" style='text-align:center'>
+    <view style='margin-top:-.5em;display:flex;justify-content:center'>
+     <text style='color:black' class='text-xs'>
+        排队即代表您同意
+      </text>
+      <text style='color:#1cbbb4' class='text-xs' bindtap='toAgreement'>
+        {{'<<'}}用户服务协议{{'>>'}}
+      </text>
+    </view>
+      
+      
+      <text style='color:#1cbbb4;margin-top:.3em'  class='text-xs' bindtap="findNow">查询当前叫号进度</text>
+      <view style='color:#1cbbb4;margin-top:.3em' class='text-xs' bindtap='findCustomer'>查看顾客点评信息</view>
+    </view>
+
+<!-- 模态框 -->
+  <view class="cu-modal {{modalName=='DialogModal1'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">Modal标题</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      您选择的是：{{queue.title}}，请选择是否继续！
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn line-green text-green" bindtap="hideModal">取消</button>
+        <button class="cu-btn bg-green margin-left" bindtap="handleOk">确定</button>
+
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 模态框结束 -->
+<i-toast id="toast" />
+</view>

@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/nowqueue/nowqueue",
+    "pages/index/index",
+    "pages/queue/queue",
+    "pages/logs/logs",
+    "pages/agreement/aggreement"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "银行排队系统",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-cell-group": "../../dist/cell-group/index",
+    "i-cell": "../../dist/cell/index",
+    "cu-custom": "../../colorui/components/cu-custom",
+    "i-radio-group": "../../dist/radio-group/index",
+    "i-radio": "../../dist/radio/index",
+    "i-toast": "../../dist/toast/index"
+  }
+}
