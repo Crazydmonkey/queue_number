@@ -1,0 +1,37 @@
+
+<view class="now_queue ">
+   <view class="bg-gradual-blue flex-sub radius shadow-lg" style="height:100%;">
+     <view style="height:30px">
+       <button class="cu-btn sm" style="margin-top:1em;float:left;margin-left:1em;width:60px">联系我们</button><button style="float:right;margin-top:1em;margin-right:1em;width:60px" class="cu-btn sm">关闭语音</button>
+     </view>
+     <view style="font-size:12px;text-align:center;margin-top:1em">
+        您目前与我们相距：{{km}}公里
+     </view>
+    
+      <view class=" text-xl" style="text-align:center;margin-top:1em">
+        <text class="text-black text-bold">排队已完成或取消</text>
+      </view>
+      
+      <view class='padding' style="text-align:center;margin-top:.5em">
+         <text class="text-black padding" style="font-size:12px;color:white">若有疑问，可咨询我们</text>
+      </view>
+    
+
+    <view class="padding" style="position:relative;border-radius:10px;height:50%;width:50%;margin:8em auto">
+      <view  style="text-align:center;">
+            <text class="text-black padding" style="font-size:12px;color:white">微信公众号二维码</text>
+      </view>
+      <view  style="position:relative;border-radius:10px;height:100%;width:100%;margin:0 auto">
+            <image class="text-black" src='../../images/one.jpg' style='height:60%;width:100%;margin-top:1em'></image>
+      </view>
+      <view  style="text-align:center;margin-top:-5em;">
+      <text class="text-black" style="font-size:12px;color:white">共有0人排队中</text>
+    </view>
+    </view>
+    
+   
+ 
+    
+
+  </view>
+</view>

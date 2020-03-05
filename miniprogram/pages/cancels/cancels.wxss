@@ -1,0 +1,14 @@
+/* pages/cancels/cancels.wxss */
+/* pages/nowqueue/nowqueue.wxss */
+@import "../../colorui/animation.wxss";
+
+image[class*="gif-"] {
+  border-radius: 6rpx;
+  display: block;
+}
+
+.now_queue{
+   height: 100%;
+   width: 100%;
+   background-color: #fff;
+}

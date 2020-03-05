@@ -1,0 +1,87 @@
+
+<view class="container">
+    <!-- 顶部图片 -->
+    <view class='images'>
+        <image  src='../../images/20200302.jpg' style=''></image>
+    </view>
+
+      <view class='actions'>
+        <view class="cu-list menu sm-border">
+          <view class="cu-item">
+              <view class="content padding-tb-sm">
+                <view class="content">
+                  <image src='../../images/map.png' class="text-black text-xs" ></image>
+                  <text class="text-black text-xs">深圳和平路3009号（当前距离）</text>
+                </view>
+                <view class="content">
+                  <image src='../../images/timer.png' class="text-black text-xs" ></image>
+                  <text class="text-black text-xs">早9:00-晚5:00</text>
+                </view>
+              </view>
+              <view class="action">
+                <view class="content">
+                  <image src='../../images/telephone.png' class="text-black text-xs" bindtap='handBo'></image>
+                </view>
+              </view>
+          </view>
+        </view>
+        <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+             <view class="cu-item">
+                <view class="content">
+                  <view class="content">
+                  
+                    <image src='../../images/owner.png' class="text-black text-xs" ></image>
+                    <text class="text-black">个人业务</text>
+                  </view>
+                
+                </view>
+                <view class="action">
+                      <text class="text-black">等待人数:{{0}}</text>
+                </view>
+             </view>
+           <view class="cu-item">
+              <view class="content">
+                <view class="content">
+                  <image src='../../images/VIP.png' class="text-black text-xs" ></image>
+                  <text class="text-black">VIP业务</text>
+                </view>
+               
+              </view>
+              <view class="action">
+                    <text class="text-black">等待人数:{{0}}</text>
+              </view>
+          </view>
+          <view class="cu-item">
+              <view class="content">
+                <view class="content">
+                  <image src='../../images/money.png' class="text-black text-xs" ></image>
+                  <text class="text-black">理财业务</text>
+                </view>
+               
+              </view>
+              <view class="action">
+                    <text class="text-black">等待人数:{{0}}</text>
+              </view>
+          </view>
+           <view class="cu-item">
+              <view class="content">
+                <view class="content">
+                  <image src='../../images/double.png' class="text-black text-xs" ></image>
+                  <text class="text-black">对公业务</text>
+                </view>
+               
+              </view>
+              <view class="action">
+                    <text class="text-black">等待人数:{{0}}</text>
+              </view>
+          </view>
+        </view>
+            
+      <button bindtap="handleClick" class="cu-btn bg-cyan margin-tb-sm lg" style='width:100%'>我要排队</button>
+    <view class="btn-area" style='text-align:center'>
+      <navigator style='color:#1cbbb4' url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover" class='text-xs'>查询当前叫号进度</navigator>
+      <navigator style='color:#1cbbb4' url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover" class='text-xs'>查看顾客点评信息</navigator>
+    </view>
+      </view>
+   
+</view>

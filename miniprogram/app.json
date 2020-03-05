@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/queue/queue",
+    "pages/agreement/aggreement",
+    "pages/nowqueue/nowqueue",
+    "pages/cancels/cancels"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "杰普银行",
+    "navigationBarTextStyle": "black",
+    "pageOrientation": "auto"
+  },
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-cell-group": "../../dist/cell-group/index",
+    "i-cell": "../../dist/cell/index",
+    "cu-custom": "../../colorui/components/cu-custom",
+    "i-radio-group": "../../dist/radio-group/index",
+    "i-radio": "../../dist/radio/index",
+    "i-toast": "../../dist/toast/index"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于定位"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
